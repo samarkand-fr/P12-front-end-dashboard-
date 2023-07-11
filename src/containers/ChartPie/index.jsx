@@ -1,23 +1,3 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import GoalScore from '../ChartPie';
-// import {HorizontalContainer} from './styles'
-
-
-// const GoalScores = ({ goalScoreData, goalScorePercentage }) => {
-//   return (
-//     <HorizontalContainer>
-//       <GoalScore goalScoreData={goalScoreData} goalScorePercentage={goalScorePercentage} />
-//     </HorizontalContainer>
-//   );
-// };
-
-// GoalScores.propTypes = {
-//   goalScoreData: PropTypes.array,
-//   goalScorePercentage: PropTypes.number,
-// };
-
-// export default GoalScores;
 import React from 'react';
 import PropTypes from 'prop-types';
 import ChartPie from '../../components/Charts/ChartPie';
