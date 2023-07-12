@@ -3,11 +3,21 @@ import { createGlobalStyle } from 'styled-components';
 import AppRouter from './AppRouter';
 
 const GlobalStyle = createGlobalStyle`
-
   body {
-    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
   }
 `;
+
 
 const App = () => {
   return (
@@ -18,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App;
+ export default App;

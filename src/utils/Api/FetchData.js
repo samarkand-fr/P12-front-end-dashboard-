@@ -6,7 +6,6 @@ import {
   USER_PERFORMANCE
 } from './mockedData';
 
-
 async function FetchData(url, dataModel) {
   let data = {};
 
