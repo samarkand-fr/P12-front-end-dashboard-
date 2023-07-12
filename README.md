@@ -2,7 +2,7 @@
 
   
 
-![](./p12-front-end-dashboard/src/assets/dashbord.png)
+![](./src/assets/dashboard.png)
 
 ## $\color{red}{Purpose}$
 
