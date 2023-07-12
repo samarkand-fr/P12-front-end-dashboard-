@@ -12,11 +12,13 @@ const DailyActivity = ({ id }) => {
   const [maxKcalAxis, setmaxKcalAxis] = useState(0);
 
   useEffect(() => {
+    // Create an instance of ApiService
     const apiService = new ApiService();
-    
-    apiService
-    .getUserDailyActivityData(id)
+
+     // Fetch the user daily activity data
+    apiService.getUserDailyActivityData(id)
     .then((response) => {
+    // Update the state variables with the received data
       setDailyActivityData(response.data);
       setminKgAxis(response.minKgAxis);
       setmaxKgAxis(response.maxKgAxis);
@@ -58,7 +60,9 @@ DailyActivity.propTypes = {
 
 export default DailyActivity;
 
-
+/**
+ *  styled components.
+ */
 const BarChartContainer = styled.section`
   align-items: center;
   background: #FBFBFB;

@@ -1,6 +1,6 @@
 import React from 'react';
 import bike from '../assets/sideNavBar/bike.png';
-import IconSideNavBar from './NavigationLogos';
+import IconSideNavBar from './NavigationLogo';
 import swim from '../assets/sideNavBar/swim.png';
 import weight from '../assets/sideNavBar/weight.png';
 import yoga from '../assets/sideNavBar/yoga.png';

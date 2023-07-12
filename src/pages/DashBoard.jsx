@@ -12,7 +12,9 @@ import Header from '../components/Header';
 import SideBar from '../components/SideBar';
 import styled from 'styled-components';
 
+// The DashBoard component receives the 'id' prop
 const DashBoard = ({ id }) => {
+  // State variables
   const [greetingData, setGreetingData] = useState(null);
   const [goalScoreData, setGoalScoreData] = useState([]);
   const [goalScorePercentage, setGoalScorePercentage] = useState(0);
@@ -20,10 +22,13 @@ const DashBoard = ({ id }) => {
   const [errorModal, setErrorModal] = useState(false);
 
   useEffect(() => {
+    // Create an instance of ApiService
     const apiService = new ApiService();
-    apiService
-      .getUserMainData(id)
+    
+    // Fetch data from the API when the 'id' prop changes
+    apiService.getUserMainData(id)
       .then((response) => {
+        // Update the state variables with the received data
         setGreetingData(response.firstName);
         setGoalScoreData([
           { name: 'filled', value: response.userScore, fillColor: '#e60000' },
@@ -39,6 +44,7 @@ const DashBoard = ({ id }) => {
         setErrorModal(false);
       })
       .catch((error) => {
+        // If an error occurs, set the errorModal state to true
         setErrorModal(true);
       });
   }, [id]);
@@ -46,23 +52,23 @@ const DashBoard = ({ id }) => {
   return (
     <>
       <Header />
-        <SideBar />
-        <ChartContainer>
-          {errorModal ? (
-            <ErrorModal />
-          ) : (
-            <>
-              <GreetingMessage GreetingData={greetingData} />
-              <DailyActivity id={id} />
-              <HorizontalContainer>
-                <SessionsAverage id={id} />
-                <PerformanceAverage id={id} />
-                <GoalScores goalScoreData={goalScoreData} goalScorePercentage={goalScorePercentage} />
-              </HorizontalContainer>
-              <UserStatsCard userStatsData={userStatsData} />
-            </>
-          )}
-        </ChartContainer>
+      <SideBar />
+      <ChartContainer>
+        {errorModal ? (
+          <ErrorModal />
+        ) : (
+          <>
+            <GreetingMessage GreetingData={greetingData} />
+            <DailyActivity id={id} />
+            <HorizontalContainer>
+              <SessionsAverage id={id} />
+              <PerformanceAverage id={id} />
+              <GoalScores goalScoreData={goalScoreData} goalScorePercentage={goalScorePercentage} />
+            </HorizontalContainer>
+            <UserStatsCard userStatsData={userStatsData} />
+          </>
+        )}
+      </ChartContainer>
     </>
   );
 };
@@ -73,6 +79,9 @@ DashBoard.propTypes = {
 
 export default DashBoard;
 
+/**
+ *  styled components.
+ */
 const ChartContainer = styled.section`
   display: flex;
   flex-direction: column;

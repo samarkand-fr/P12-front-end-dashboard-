@@ -4,18 +4,36 @@ import { Line, LineChart, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'rec
 import SessionToolTip from '../ToolTipSession';
 import styled from 'styled-components';
 
+/**
+ * Renders a line chart to display user average data.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Array} props.userAverageData - The user average data for the line chart.
+ * @returns {JSX.Element} The rendered ChartLine component.
+ */
 const ChartLine = ({ userAverageData }) => {
   const [surfaceColor, setSurfaceColor] = useState('rgba(255, 0, 0, 0.4)');
   const [maskPosition, setMaskPosition] = useState(0);
 
+  /**
+   * Handles the mouse movement on the chart and updates the surface color and mask position.
+   *
+   * @param {Object} e - The event object containing the chart information.
+   */
   const handleMouseMove = (e) => {
     if (e && e.activeLabel) {
-      const colorIntensity = 0.3 ;
+      const colorIntensity = 0.3;
       setSurfaceColor(`rgba(200, 0, 0, ${colorIntensity})`);
       setMaskPosition(e.chartX);
     }
   };
 
+  /**
+   * Custom cursor component used in the chart.
+   *
+   * @returns {null} The CustomCursor component doesn't render any content.
+   */
   const CustomCursor = () => null;
 
   return (
@@ -66,19 +84,24 @@ const ChartLine = ({ userAverageData }) => {
   );
 };
 
+// Prop Types
 ChartLine.propTypes = {
   userAverageData: PropTypes.array,
 };
 
 export default ChartLine;
 
-const LineChartContainer = styled.div `
-    background-color: rgba(255, 0, 0);
-    border-radius: .3125rem;
-    height: 16.5rem;
-    width: 16.5rem;
-    @media (min-width: 1024px) and (max-width: 1400px) {
-            height: 13rem;
-            width: 13rem;
-        }
-    `
+/**
+ * Styled component
+ */
+const LineChartContainer = styled.div`
+  background-color: rgba(255, 0, 0);
+  border-radius: 0.3125rem;
+  height: 16.5rem;
+  width: 16.5rem;
+  
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    height: 13rem;
+    width: 13rem;
+  }
+`;

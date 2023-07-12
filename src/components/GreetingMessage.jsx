@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
+/**
+ * Renders a greeting message component.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.GreetingData - The greeting data to display.(user's name)
+ * @returns {JSX.Element} The rendered GreetingMessage component.
+ */
 function GreetingMessage({ GreetingData }) {
   console.log(GreetingData);
   return (

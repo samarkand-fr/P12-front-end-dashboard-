@@ -1,8 +1,15 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
 
+/**
+ * Renders a radar chart to display performance average data.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Array} props.performanceAverageData - The performance average data for the radar chart.
+ * @returns {JSX.Element} The rendered ChartRadar component.
+ */
 const ChartRadar = ({ performanceAverageData }) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -28,6 +35,7 @@ const ChartRadar = ({ performanceAverageData }) => {
   );
 };
 
+// Prop Types
 ChartRadar.propTypes = {
   performanceAverageData: PropTypes.array,
 };

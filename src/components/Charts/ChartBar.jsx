@@ -3,6 +3,19 @@ import PropTypes from 'prop-types';
 import { BarChart, Bar, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import TooltipActivity from '.././ToolTipActivity';
 
+/**
+ * Renders a bar chart to display daily activity data.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Array} props.dailyActivityData - The daily activity data for the bar chart.
+ * @param {number} props.minKgAxis - The minimum value for the kg axis.
+ * @param {number} props.maxKgAxis - The maximum value for the kg axis.
+ * @param {number} props.minKcalAxis - The minimum value for the kcal axis.
+ * @param {number} props.maxKcalAxis - The maximum value for the kcal axis.
+ * @returns {JSX.Element} The rendered ChartBar component.
+ */
+
 const ChartBar = ({
   dailyActivityData,
   minKgAxis,
@@ -65,6 +78,7 @@ const ChartBar = ({
   </ResponsiveContainer>
 );
 
+// Prop Types
 ChartBar.propTypes = {
   dailyActivityData: PropTypes.array,
   minKgAxis: PropTypes.number,

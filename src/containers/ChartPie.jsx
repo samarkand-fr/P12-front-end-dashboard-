@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 import ChartPie from '../components/Charts/ChartPie';
 import styled from 'styled-components';
 
+/**
+ * GoalScores component.
+ * @param {Object} props - The component props.
+ * @param {Array} props.goalScoreData - The goal score data.
+ * @param {number} props.goalScorePercentage - The goal score percentage.
+ * @returns {JSX.Element} - The rendered component.
+ */
 const GoalScores = ({ goalScoreData, goalScorePercentage }) => {
   return (
     <HorizontalContainer>
@@ -28,6 +35,9 @@ GoalScores.propTypes = {
 
 export default GoalScores;
 
+/**
+ *  styled components.
+ */
 const HorizontalContainer = styled.section`
   display: flex;
   justify-content: space-between;

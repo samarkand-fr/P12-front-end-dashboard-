@@ -4,6 +4,11 @@ import logo from '../assets/logo/logo.png';
 import NavBar from './NavBar';
 import styled from 'styled-components';
 
+/**
+ * Renders the header section of the webpage.
+ * @component
+ * @returns {JSX.Element} The rendered Header component.
+ */
 const Header = () => {
   return (
     <HeaderContainer>

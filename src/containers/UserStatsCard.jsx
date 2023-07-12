@@ -7,8 +7,18 @@ import carbohydrates from '../assets/dailyStats/carbohydrates.png';
 import lipids from '../assets/dailyStats/lipids.png';
 import styled from 'styled-components';
 
-
+/**
+ * UserStatsCard component.
+ * @param {Object} props - The component props.
+ * @param {Object} props.userStatsData - The user stats data.
+ * @returns {JSX.Element} - The rendered component.
+ */
 const UserStatsCard = ({ userStatsData }) => {
+  /**
+   * Format a number with a specific decimal precision.
+   * @param {number} number - The number to format.
+   * @returns {string} - The formatted number.
+   */
   const formatNumber = (number) => {
     if (typeof number !== 'undefined') {
       return number.toLocaleString(undefined, {
@@ -21,7 +31,7 @@ const UserStatsCard = ({ userStatsData }) => {
 
   return (
     <Container>
-      <ChartsVertical >
+      <ChartsVertical>
         {/* CALORIES */}
         <DailyStats
           data={formatNumber(userStatsData.calorieCount / 1000)}
@@ -65,18 +75,20 @@ UserStatsCard.propTypes = {
 
 export default UserStatsCard;
 
+/**
+ *  styled components.
+ */
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  
 `;
 
 const ChartsVertical = styled.section`
-display: flex;
-flex-direction: column;
-height: auto;
-justify-content: space-between;
-left: 55rem;
-position: absolute;
-top: 15%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  left: 55rem;
+  position: absolute;
+  top: 15%;
 `;

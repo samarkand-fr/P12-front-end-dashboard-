@@ -2,6 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+/**
+ * Renders a daily statistic component.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.data - The data for the statistic.
+ * @param {string} props.icon - The icon image source.
+ * @param {string} props.unit - The unit of measurement for the statistic.
+ * @param {string} props.name - The name of the statistic.
+ * @returns {JSX.Element} The rendered DailyStat component.
+ */
 const DailyStat = ({ data, icon, unit, name }) => {
   return (
     <Container>
@@ -16,6 +27,7 @@ const DailyStat = ({ data, icon, unit, name }) => {
   );
 };
 
+// Prop Types
 DailyStat.propTypes = {
   data: PropTypes.string,
   icon: PropTypes.string,
@@ -25,12 +37,13 @@ DailyStat.propTypes = {
 
 export default DailyStat;
 
+// Styled Components
 
 const Container = styled.div`
   align-items: center;
   background: #FBFBFB;
-  border-radius: .3125rem;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.0212249);
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.0212249);
   display: flex;
   height: 7.75rem;
   justify-content: space-evenly;
@@ -45,7 +58,7 @@ const Container = styled.div`
 
 const StatContainerImg = styled.div`
   align-items: center;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   display: flex;
   height: 3.75rem;
   justify-content: center;
@@ -87,16 +100,16 @@ const StatQuantity = styled.p`
   font-weight: 700;
 
   @media (min-width: 1024px) and (max-width: 1400px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 `;
 
 const StatType = styled.p`
   color: #74798C;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 500;
 
   @media (min-width: 1024px) and (max-width: 1400px) {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 `;

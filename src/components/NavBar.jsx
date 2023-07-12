@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+/**
+ * Renders the navigation menu component.
+ * @component
+ * @returns {JSX.Element} The rendered NavBar component.
+ */
+
 const NavBar = () => {
   return (
     <NavMenuContainer>

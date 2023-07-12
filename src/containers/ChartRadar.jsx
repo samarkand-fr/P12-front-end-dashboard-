@@ -4,23 +4,32 @@ import ApiService from '../utils/Api/ApiService';
 import ChartRadar from '../components/Charts/ChartRadar';
 import styled from 'styled-components';
 
+/**
+ * PerformanceAverage component.
+ * @param {Object} props - The component props.
+ * @param {string} props.id - The user ID.
+ * @returns {JSX.Element} - The rendered component.
+ */
 const PerformanceAverage = ({ id }) => {
   const [performanceAverageData, setPerformanceAverageData] = useState([]);
 
   useEffect(() => {
+    // Create an instance of ApiService
     const apiService = new ApiService();
   
-    apiService
-    .getUserPerformanceData(id)
-    .then((response) => {
-      const reversedData = Array.isArray(response) ? response.reverse() : response;
-      setPerformanceAverageData(reversedData);
-    });
+    // Fetch the user performance data
+    apiService.getUserPerformanceData(id)
+      .then((response) => {
+        // Reverse the data array if it's an array, otherwise use it as-is
+        const reversedData = Array.isArray(response) ? response.reverse() : response;
+         // Update the state variables with the received data
+        setPerformanceAverageData(reversedData);
+      });
   }, [id]);
   
   return (
     <PerformanceRadarChartContainer>
-       <ChartRadar performanceAverageData={performanceAverageData} />
+      <ChartRadar performanceAverageData={performanceAverageData} />
     </PerformanceRadarChartContainer>
   );
 };
@@ -31,7 +40,9 @@ PerformanceAverage.propTypes = {
 
 export default PerformanceAverage;
 
-
+/**
+ * styled component.
+ */
 const PerformanceRadarChartContainer = styled.article`
   align-items: center;
   background-color: #282D30;
