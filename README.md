@@ -2,7 +2,7 @@
 
   
 
-![](./src/assets/dashbord.png)
+![](./p12-front-end-dashboard/src/assets/dashbord.png)
 
 ## $\color{red}{Purpose}$
 
@@ -42,8 +42,7 @@ SportSee is an application that allows users to track their fitness progress by 
 -   Develop a data modeling class to ensure proper formatting of API data.
 -   Optionally document the project using a Readme, JSDoc, or PropTypes.
 
-  
-Sure! Here's an example of how you can add an explanation of using mocked or real data in the README file:
+
 
 ----------
 ## $\color{red}{Data Source}$
