@@ -36,7 +36,7 @@ const NamesContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
   margin-top: 2rem;
 `;
 
@@ -54,8 +54,8 @@ const NameBox = styled.div`
   border-radius: 50%;
   color: #000;
   font-size: 2.5rem;
-  width: 16rem;
-  height: 16rem;
+  width: 10rem;
+  height: 10rem;
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
