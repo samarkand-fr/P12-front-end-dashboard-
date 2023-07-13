@@ -79,9 +79,6 @@ DashBoard.propTypes = {
 
 export default DashBoard;
 
-/**
- *  styled components.
- */
 const ChartContainer = styled.section`
   display: flex;
   flex-direction: column;

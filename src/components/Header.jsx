@@ -31,6 +31,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   width: 100%;
   position:fixed;
+  z-index:100;
 `;
 
 const LogoHeader = styled.img`

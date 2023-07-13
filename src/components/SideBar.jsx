@@ -39,9 +39,10 @@ const SideBarContainer = styled.section`
   color: #FFF;
   display: flex;
   flex-direction: column;
-  height: 64rem;
-  justify-content: space-around;
+  height: 70rem;
+  justify-content: space-evenly;
   width: 7.3125rem;
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
 `;
 
 const SideBarUlContainer  = styled.ul`

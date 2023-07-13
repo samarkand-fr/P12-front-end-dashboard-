@@ -76,7 +76,7 @@ UserStatsCard.propTypes = {
 export default UserStatsCard;
 
 /**
- *  styled components.
+ * styled components.
  */
 const Container = styled.section`
   display: flex;
