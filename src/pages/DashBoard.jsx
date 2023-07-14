@@ -84,13 +84,16 @@ const ChartContainer = styled.section`
   flex-direction: column;
   left: 15%;
   position: absolute;
-  top: 9rem;
-  width: 52.1875rem;
+  top: 3rem;
+  width: 42rem;
+  @media (min-width: 1200px) {
+    top: 5rem;
+  }
 `;
 
 const HorizontalContainer = styled.section`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   align-items: flex-start; 
 `;

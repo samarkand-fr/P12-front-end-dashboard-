@@ -30,11 +30,13 @@ export default GreetingMessage;
 
 
 const GreetingSection = styled.section`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const GreetingTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin-bottom:1.5rem;
+  margin-top:2.8rem
 `;
 
 const GreetingText = styled.p`

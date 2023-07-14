@@ -31,7 +31,7 @@ const ChartBar = ({
         bottom: 30,
       }}
       barGap={4}
-      barSize={7}
+      barSize={5}
     >
       <CartesianGrid strokeDasharray="2 2" vertical={false} dot={true}/>
       <XAxis

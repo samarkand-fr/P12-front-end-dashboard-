@@ -70,8 +70,8 @@ const BarChartContainer = styled.section`
   box-shadow: .25rem .125rem .25rem rgba(0, 0, 0, 0.0212249);
   display: flex;
   flex-direction: column;
-  height: 20rem;
-  margin-bottom: 2rem;
+  height: 16rem;
+  margin-bottom: 1.8rem;
   padding: 1.5rem 1.875rem;
 `;
 
@@ -83,7 +83,7 @@ const BarChartHeader = styled.header`
 
 const BarChartTitle = styled.h2`
   color: #20253A;
-  font-size: .9375rem;
+  font-size: .9rem;
   margin-left: 2.5rem;
   margin-bottom: 35px;
 `;

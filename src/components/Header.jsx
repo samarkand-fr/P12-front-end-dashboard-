@@ -27,11 +27,9 @@ const HeaderContainer = styled.header`
   background: #020203;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
   display: flex;
-  height: 5.6875rem;
+  height: 5rem;
   justify-content: space-between;
   width: 100%;
-  position:fixed;
-  z-index:100;
 `;
 
 const LogoHeader = styled.img`

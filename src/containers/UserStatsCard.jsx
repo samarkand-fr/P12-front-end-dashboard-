@@ -88,7 +88,8 @@ const ChartsVertical = styled.section`
   flex-direction: column;
   height: auto;
   justify-content: space-between;
-  left: 55rem;
+  left: 43rem;
   position: absolute;
-  top: 15%;
+  top: 13%;
+  
 `;

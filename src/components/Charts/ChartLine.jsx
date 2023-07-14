@@ -97,11 +97,7 @@ export default ChartLine;
 const LineChartContainer = styled.div`
   background-color: rgba(255, 0, 0);
   border-radius: 0.3125rem;
-  height: 16.5rem;
-  width: 16.5rem;
+  height: 13.5rem;
+  width: 13.5rem;
   
-  @media (min-width: 1024px) and (max-width: 1400px) {
-    height: 13rem;
-    width: 13rem;
-  }
 `;

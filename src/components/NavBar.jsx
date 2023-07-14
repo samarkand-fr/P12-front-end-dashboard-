@@ -32,7 +32,7 @@ const NavMenuContainer = styled.nav`
 const NavLink = styled(Link)`
   color: #fff;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   list-style: none;
   text-decoration: none;

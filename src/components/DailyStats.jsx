@@ -45,15 +45,12 @@ const Container = styled.div`
   border-radius: 0.3125rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.0212249);
   display: flex;
-  height: 7.75rem;
+  height: 5rem;
   justify-content: space-evenly;
-  width: 16.125rem;
+  width: 11rem;
   margin-top: 55px;
 
-  @media (min-width: 1024px) and (max-width: 1400px) {
-    height: 5.625rem;
-    width: 11.25rem;
-  }
+  
 `;
 
 const StatContainerImg = styled.div`

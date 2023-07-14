@@ -50,16 +50,11 @@ const GoalPieChartContainer = styled.article`
   border-radius: .3125rem;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.0212249);
   display: flex;
-  height: 16.4375rem;
+  height: 13.5rem;
   justify-content: center;
   position: relative;
-  width: 16.125rem;
+  width: 13.5rem;
 
-  @media (min-width: 1024px) and (max-width: 1400px) {
-    height: 13rem;
-    width: 13rem;
-    margin-top:1rem;
-  }
 `;
 
 const GoalPieChartTitle = styled.h2`
@@ -70,9 +65,6 @@ const GoalPieChartTitle = styled.h2`
   position: absolute;
   top: 1.5rem;
 
-  @media (min-width: 1024px) and (max-width: 1400px) {
-    display: none;
-  }
 `;
 
 const GoalPieChartInfos = styled.div`

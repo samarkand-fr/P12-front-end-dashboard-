@@ -39,10 +39,9 @@ const SideBarContainer = styled.section`
   color: #FFF;
   display: flex;
   flex-direction: column;
-  height: 70rem;
+  height: 64rem;
   justify-content: space-evenly;
-  width: 7.3125rem;
-  overflow-y: auto; /* Add this line to enable vertical scrolling */
+  width: 5.5rem;
 `;
 
 const SideBarUlContainer  = styled.ul`
@@ -51,9 +50,10 @@ padding: 0;
 `;
 
 const Copyright = styled.div`
-  font-size: .8rem;
+  font-size: .6rem;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
+  margin-bottom:16rem
 `;
 
 const BorderLogoSideBar = styled.li`
@@ -61,8 +61,8 @@ const BorderLogoSideBar = styled.li`
   background: #FFF;
   border-radius: .375rem;
   display: flex;
-  height: 4rem;
+  height: 3rem;
   justify-content: center;
   margin-bottom: 2rem;
-  width: 4rem;
+  width: 3rem;
 `;

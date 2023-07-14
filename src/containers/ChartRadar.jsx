@@ -48,13 +48,8 @@ const PerformanceRadarChartContainer = styled.article`
   background-color: #282D30;
   border-radius: .3125rem;
   display: flex;
-  height: 16.4375rem;
+  height: 13.5rem;
   text-align: center;
-  width: 16.125rem;
+  width: 13.5rem;
 
-  @media (min-width: 1024px) and (max-width: 1400px) {
-    height: 13rem;
-    width: 13rem;
-    margin-top:1rem
-  }
 `;
