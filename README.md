@@ -62,25 +62,20 @@ This project supports two modes for data retrieval: **mocked data** and **real d
 
 ## $\color{red}{Installation}$
 
-  
-
 1.  **Clone the repository**:
 git clone https://github.com/samarkand-fr/P12-front-end-dashboard-.git
 
-2.  **Run the project**:
+2.  **Navigate to the project folder:**:
+cd P12-front-end-dashboard-
 
-To run the project, follow these steps:
+3.  **install project dependencies:**:
+  npm install 
 
-1.  Install the project dependencies by running `npm install`.
-2.  Start the development server by running `npm start`.
-
-The project will be accessible at [http://localhost:3000](http://localhost:3000/) in your browser.
-  
-
-3.  **Launch the application**:
+4.  **Launch the application**:
 
   npm start
 
   
+The project will be accessible at [http://localhost:3000](http://localhost:3000/) in your browser.
 
-You can access the application in your browser at http://localhost:3001 if you are using backend
+If you are using a backend, you can access the application at  http://localhost:3001 .
