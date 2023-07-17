@@ -4,8 +4,9 @@ import ApiService from '../utils/Api/ApiService';
 import ChartRadar from '../components/Charts/ChartRadar';
 import styled from 'styled-components';
 
+
 /**
- * PerformanceAverage component.
+ * displays the performance average for a user using a radar chart
  * @param {Object} props - The component props.
  * @param {string} props.id - The user ID.
  * @returns {JSX.Element} - The rendered component.

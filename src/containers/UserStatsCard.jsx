@@ -8,7 +8,7 @@ import lipids from '../assets/dailyStats/lipids.png';
 import styled from 'styled-components';
 
 /**
- * UserStatsCard component.
+ * represents a card that displays various user statistics. 
  * @param {Object} props - The component props.
  * @param {Object} props.userStatsData - The user stats data.
  * @returns {JSX.Element} - The rendered component.

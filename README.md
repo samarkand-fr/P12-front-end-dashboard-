@@ -63,12 +63,15 @@ This project supports two modes for data retrieval: **mocked data** and **real d
 ## $\color{red}{Installation}$
 
 1.  **Clone the repository**:
+
 git clone https://github.com/samarkand-fr/P12-front-end-dashboard-.git
 
 2.  **Navigate to the project folder:**:
+
 cd P12-front-end-dashboard-
 
 3.  **install project dependencies:**:
+
   npm install 
 
 4.  **Launch the application**:

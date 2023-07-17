@@ -4,12 +4,13 @@ import ChartPie from '../components/Charts/ChartPie';
 import styled from 'styled-components';
 
 /**
- * GoalScores component.
+ * Displays the goal score chart for a user represented by a pie chart.
  * @param {Object} props - The component props.
  * @param {Array} props.goalScoreData - The goal score data.
  * @param {number} props.goalScorePercentage - The goal score percentage.
  * @returns {JSX.Element} - The rendered component.
  */
+
 const GoalScores = ({ goalScoreData, goalScorePercentage }) => {
   return (
     <HorizontalContainer>
@@ -60,10 +61,10 @@ const GoalPieChartContainer = styled.article`
 const GoalPieChartTitle = styled.h2`
   font-size: 1rem;
   font-weight: 500;
-  left: 2rem;
+  left: 1.7rem;
   margin: 0;
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
 
 `;
 

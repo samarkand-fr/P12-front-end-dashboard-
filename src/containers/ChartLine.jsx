@@ -5,11 +5,12 @@ import ChartLine from '../components/Charts/ChartLine';
 import styled from 'styled-components';
 
 /**
- * SessionsAverage component.
+ * Displays the average session duration chart for a user represented by a line chart.
  * @param {Object} props - The component props.
  * @param {string} props.id - The user ID.
  * @returns {JSX.Element} - The rendered component.
  */
+
 const SessionsAverage = ({ id }) => {
   const [userAverageData, setUserAverageData] = useState([]);
 

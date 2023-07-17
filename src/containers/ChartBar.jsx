@@ -4,6 +4,13 @@ import ApiService from '../utils/Api/ApiService';
 import ChartBar from '../components/Charts/ChartBar';
 import styled from 'styled-components';
 
+/**
+ * Displays the daily activity chart for a user represented by a bar chart.
+ * @param {Object} props - The component props.
+ * @param {string} props.id - The user ID.
+ * @returns {JSX.Element} - The rendered component.
+ */
+
 const DailyActivity = ({ id }) => {
   const [dailyActivityData, setDailyActivityData] = useState([]);
   const [minKgAxis, setminKgAxis] = useState(0);
