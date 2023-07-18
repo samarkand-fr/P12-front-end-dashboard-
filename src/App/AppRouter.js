@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams  } from 'react-router-dom';
 import DashBoard from '../pages/DashBoard';
 import Home from '../pages/Home';
-// import Error404 from '../pages/Error404';
+import Error404 from '../pages/Error404';
 
 const AppRouter = () => {
   return (
@@ -10,7 +10,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard/:id" element={<DashboardWrapper />} />
-        <Route path="*" element={<Home/>} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
   );
