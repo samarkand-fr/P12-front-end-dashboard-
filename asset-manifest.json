@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.js": "/P12-front-end-dashboard-/static/js/main.5c658c97.js",
-    "static/media/error404.jpeg": "/P12-front-end-dashboard-/static/media/error404.a0c95efbca74aefe786a.jpeg",
+    "main.js": "/P12-front-end-dashboard-/static/js/main.7ea63fa8.js",
     "index.html": "/P12-front-end-dashboard-/index.html",
-    "main.5c658c97.js.map": "/P12-front-end-dashboard-/static/js/main.5c658c97.js.map"
+    "main.7ea63fa8.js.map": "/P12-front-end-dashboard-/static/js/main.7ea63fa8.js.map"
   },
   "entrypoints": [
-    "static/js/main.5c658c97.js"
+    "static/js/main.7ea63fa8.js"
   ]
 }
